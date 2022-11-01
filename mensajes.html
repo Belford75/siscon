@@ -1,0 +1,109 @@
+<!doctype html>
+
+<script type="text/javascript" src="./assets/scripts/main.js"></script>
+<script>
+    function MensajeErrorInicio() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Usuario incorrecto'
+        });
+        setTimeout("Redireccionar()", 2000);
+    }
+
+    function RegistroEliminado() {
+        Swal.fire({
+            icon: 'info',
+            title: 'El registro fue eliminado'
+        });
+        setTimeout("Redireccionar()", 1500);
+    }
+
+    function RegistroModificado() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Se guardaron los cambios'
+        });
+        setTimeout("Redireccionar()", 1500);
+    }
+
+    function MensajeGuardado() {
+        Swal.fire({
+            icon: 'success',
+            title: 'La información se guardó exitosamente'
+        });
+        setTimeout("Redireccionar()", 2000);
+    }
+    
+    function SinTC() {
+        Swal.fire({
+            icon: 'info',
+            title: 'No se ha definido el Tipo de Cambio'
+        });
+    }
+
+    function MensajeNoEliminado() {
+        Swal.fire({
+            icon: 'info',
+            title: 'No se pudo eliminar, existen movimientos contables'
+        });
+        setTimeout("Redireccionar()", 1500);
+    }
+
+    function MensajeCerrarSesion() {
+        Swal.fire({
+            icon: 'action',
+            title: 'Se ha cerrado la sesión'
+        });
+        setTimeout("Redireccionar()", 1500);
+    }
+
+    function IngreseNuevamente() {
+        Swal.fire({
+            icon: 'action',
+            title: 'Debe iniciar sesión nuevamente'
+        });
+        setTimeout("Redireccionar()", 2000);
+    }
+
+    function AbrirUsr() {
+        document.getElementById("login").style.display = "block";
+    }
+
+    function UserDB() {
+        document.getElementById("UserDB").style.display = "block";
+    }
+
+    function CerrarUsrDB() {
+        document.getElementById("UserDB").style.display = "none";
+    }
+
+    function mostrarBtnFind(){
+        document.getElementById('btnBuscar').style.display = 'block';
+    }
+
+    function ocultarBtnFind(){
+        document.getElementById('btnBuscar').style.display = 'none';
+    }
+
+    function mostrarBtn(){
+        document.getElementById('mesCumple').style.display = 'none';
+        document.getElementById('btnBuscar').style.display = 'block';
+    }
+
+    function ocultarBtn(){
+        document.getElementById('btnBuscar').style.display = 'none';
+        document.getElementById('mesCumple').style.display = 'block';
+    }
+
+    function ocultarTodo(){
+        document.getElementById('btnBuscar').style.display = 'none';
+        document.getElementById('mesCumple').style.display = 'none';
+    }
+
+    function Redireccionar(){
+        location.href="index.php";
+    }
+    
+</script>
+
+</html>

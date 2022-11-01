@@ -1,0 +1,14 @@
+<?php
+
+//$conexion = mysqli_connect("localhost", "root", "", "sisgec");
+
+$server = "127.0.0.1:3306";
+$user = "u109699809_usr";
+$pass = "apostolbelford1";
+$db = "u109699809_db";
+
+$conexion = new mysqli($server,$user,$pass,$db);
+
+if($conexion->connect_errno){
+   die("ERROR EN LA CONEXION" . $conexion->connect_errno);
+}
